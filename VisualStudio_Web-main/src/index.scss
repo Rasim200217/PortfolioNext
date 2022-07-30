@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "GothamProRegular";
+  src: url("./fonts/GothaProMed.otf");
+
+  font-style: normal;
+  font-weight: 400;
+}
+
+@layer base {
+  body {
+    @apply m-0;
+    font-family: "Gotham Pro", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  li {
+    @apply p-4;
+
+    a {
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: yellow;
+    }
+  }
+
+  .h-496 {
+    height: 31rem;
+  }
+  .w-vw100 {
+    width: 100vw;
+  }
+}
